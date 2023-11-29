@@ -76,9 +76,7 @@ C:\Users\Vahid\source\repos\Kit19MVC\Kit19MVC\obj\Debug\net6.0\staticwebassets\m
 C:\Users\Vahid\source\repos\Kit19MVC\Kit19MVC\obj\Debug\net6.0\staticwebassets.pack.json
 C:\Users\Vahid\source\repos\Kit19MVC\Kit19MVC\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\Vahid\source\repos\Kit19MVC\Kit19MVC\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\Vahid\source\repos\Kit19MVC\Kit19MVC\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Vahid\source\repos\Kit19MVC\Kit19MVC\obj\Debug\net6.0\scopedcss\bundle\Kit19MVC.styles.css
-C:\Users\Vahid\source\repos\Kit19MVC\Kit19MVC\obj\Debug\net6.0\scopedcss\projectbundle\Kit19MVC.bundle.scp.css
 C:\Users\Vahid\source\repos\Kit19MVC\Kit19MVC\obj\Debug\net6.0\Kit19MVC.csproj.CopyComplete
 C:\Users\Vahid\source\repos\Kit19MVC\Kit19MVC\obj\Debug\net6.0\Kit19MVC.dll
 C:\Users\Vahid\source\repos\Kit19MVC\Kit19MVC\obj\Debug\net6.0\refint\Kit19MVC.dll
@@ -86,3 +84,5 @@ C:\Users\Vahid\source\repos\Kit19MVC\Kit19MVC\obj\Debug\net6.0\Kit19MVC.pdb
 C:\Users\Vahid\source\repos\Kit19MVC\Kit19MVC\obj\Debug\net6.0\Kit19MVC.genruntimeconfig.cache
 C:\Users\Vahid\source\repos\Kit19MVC\Kit19MVC\obj\Debug\net6.0\ref\Kit19MVC.dll
 C:\Users\Vahid\source\repos\Kit19MVC\Kit19MVC\bin\Debug\net6.0\FluentAssertions.dll
+C:\Users\Vahid\source\repos\Kit19MVC\Kit19MVC\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Vahid\source\repos\Kit19MVC\Kit19MVC\obj\Debug\net6.0\scopedcss\projectbundle\Kit19MVC.bundle.scp.css
