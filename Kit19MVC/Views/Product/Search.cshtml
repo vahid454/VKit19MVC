@@ -1,25 +1,53 @@
 ﻿@model Kit19.Models.ProductViewModel
 
-<form asp-controller="Product" asp-action="Search" method="post" class="mt-4">
+<form asp-controller="Product" asp-action="Search" method="post" class="mt-4" id="searchForm">
     <div class="form-group">
         <label asp-for="ProductName">Product Name</label>
-        <input asp-for="ProductName" class="form-control" />
+        <input asp-for="ProductName" class="form-control" onchange="hideConjunction()" />
     </div>
     <div class="form-group">
         <label asp-for="Size">Size</label>
-        <input asp-for="Size" class="form-control" />
+        <input asp-for="Size" class="form-control" onchange="hideConjunction()" />
     </div>
     <div class="form-group">
         <label asp-for="Price">Price</label>
-        <input asp-for="Price" type="text" pattern="[0-9]+" class="form-control" />
+        <input asp-for="Price" type="text" pattern="[0-9]+" class="form-control" onchange="hideConjunction()" />
     </div>
     <div class="form-group">
         <label asp-for="MfgDate">Date</label>
-        <input asp-for="MfgDate" type="date" class="form-control" />
+        <input asp-for="MfgDate" type="date" class="form-control" onchange="hideConjunction()" />
     </div>
     <div class="form-group">
         <label asp-for="Category">Category</label>
-        <input asp-for="Category" class="form-control" />
-    </div><br/>
+        <input asp-for="Category" class="form-control" onchange="hideConjunction()" />
+    </div>
+    <div class="form-group" id="conjunctionField" style="display:none;">
+        <!-- Initially hidden -->
+        <label>Conjunction</label>
+        <select name="Conjunction" class="form-control">
+            <option value="AND">AND</option>
+            <option value="OR">OR</option>
+        </select>
+    </div>
+    <br />
     <button align="center" type="submit" class="btn btn-primary">Search</button>
+    <button type="button" class="btn btn-secondary" onclick="clearForm()">Clear</button>
+
 </form>
+<script>
+    function clearForm() {
+        document.getElementById("searchForm").reset(); // clear
+        hideConjunction();
+    }
+    function hideConjunction() {
+        var inputs = document.querySelectorAll('#searchForm input');
+        var filledFields = Array.from(inputs).filter(input => input.value.trim() !== '');
+        console.log(filledFields);
+        var conjunctionField = document.getElementById('conjunctionField');
+        if (filledFields.length > 2) {
+            conjunctionField.style.display = 'block'; // show
+        } else {
+            conjunctionField.style.display = 'none'; // hide
+        }
+    }
+</script>

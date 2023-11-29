@@ -17,7 +17,8 @@ namespace Kit19.MyDbContext
             string size,
             decimal? price,
             DateTime? mfgDate,
-            string category)
+            string category,
+            string conjunction)
         {
             var parameters = new[]
             {
@@ -25,10 +26,11 @@ namespace Kit19.MyDbContext
             new SqlParameter("@Size", size ?? (object)DBNull.Value),
             new SqlParameter("@Price", price ?? (object)DBNull.Value),
             new SqlParameter("@MfgDate", mfgDate ?? (object)DBNull.Value),
-            new SqlParameter("@Category", category ?? (object)DBNull.Value)
+            new SqlParameter("@Category", category ?? (object)DBNull.Value),
+            new SqlParameter("@Conjunction", conjunction ?? (object)DBNull.Value)
         };
 
-            return Product.FromSqlRaw("EXEC SearchProducts @ProductName, @Size, @Price, @MfgDate, @Category", parameters).ToList();
+            return Product.FromSqlRaw("EXEC SearchProducts @ProductName, @Size, @Price, @MfgDate, @Category, @Conjunction", parameters).ToList();
         }
 
     }

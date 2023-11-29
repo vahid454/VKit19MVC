@@ -26,7 +26,8 @@ namespace Kit19.Controllers
                   searchViewModel.Size,
                   searchViewModel.Price,
                   searchViewModel.MfgDate,
-                  searchViewModel.Category
+                  searchViewModel.Category,
+                  searchViewModel.Conjunction
                 );
 
             return View("SearchResult", results);
